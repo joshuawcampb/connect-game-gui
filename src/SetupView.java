@@ -1,10 +1,10 @@
 package cpsc2150.connectX;
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
+import java.awt.Dimension;
 
 /*
 This class contains the code to create and layout the GUI for the setup screen.
@@ -17,17 +17,17 @@ a java swing GUI.
 
 public class SetupView extends JFrame implements ActionListener{
     private JButton submitButton;
-    private JTextArea numRowsTxt;
-    private JTextArea numColsTxt;
-    private final Integer[] players = { 2, 3, 4,5 ,6, 7, 8, 9, 10};
+    private JTextField numRowsTxt;
+    private JTextField numColsTxt;
+    private final Integer[] players = { 2, 3, 4, 5 ,6, 7, 8, 9, 10};
     private JComboBox<Integer> numPlayersCB;
     private JLabel errorMessageLbl;
     private JLabel numRowsLbl;
     private JLabel numColsLbl;
     private JLabel numPlayersLbl;
     private JLabel numWinLbl;
-    private JTextArea numWinTxt;
-    private float fontSize = 40;
+    private JTextField numWinTxt;
+    private float fontSize = 24;
     SetupController controller;
 
     public SetupView()
@@ -35,14 +35,14 @@ public class SetupView extends JFrame implements ActionListener{
 
         submitButton = new JButton("Submit");
         numRowsLbl = new JLabel("Number of Rows: ");
-        numRowsTxt = new JTextArea(1, 10);
+        numRowsTxt = new JTextField(10);
         numColsLbl = new JLabel("Number of Columns: ");
-        numColsTxt = new JTextArea(1, 10);
+        numColsTxt = new JTextField(10);
         errorMessageLbl = new JLabel("");
         numPlayersLbl = new JLabel("Number of Players: ");
         numPlayersCB = new JComboBox<>(players);
         numWinLbl = new JLabel("Number to win: ");
-        numWinTxt = new JTextArea(1, 10);
+        numWinTxt = new JTextField(10);
 
 
         numRowsLbl.setFont(numRowsLbl.getFont().deriveFont(fontSize));
@@ -83,7 +83,6 @@ public class SetupView extends JFrame implements ActionListener{
         this.add(playersPanel);
 
 
-
         submitButton.addActionListener(this);
         this.add(submitButton);
 
@@ -95,6 +94,7 @@ public class SetupView extends JFrame implements ActionListener{
          * visible to the user now
          */
         this.pack();
+        
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
@@ -133,7 +133,7 @@ public class SetupView extends JFrame implements ActionListener{
             }
             catch (NumberFormatException e)
             {
-                msg += "Rows must be a number";
+                msg += "Rows must be a number\n";
             }
 
             try
@@ -142,7 +142,7 @@ public class SetupView extends JFrame implements ActionListener{
             }
             catch(NumberFormatException e)
             {
-                msg += "Cols must be a number";
+                msg += "Columns must be a number.\n";
             }
 
             try
@@ -151,7 +151,7 @@ public class SetupView extends JFrame implements ActionListener{
             }
             catch(NumberFormatException e)
             {
-                msg += "Wins must be a number";
+                msg += "Wins must be a number.\n";
             }
 
             numPlayers = numPlayersCB.getItemAt(numPlayersCB.getSelectedIndex());

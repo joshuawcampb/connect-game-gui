@@ -28,36 +28,37 @@ public class SetupController {
 
     public void processButtonClick(int rows, int cols, int players, int numWin )
     {
-        String errorMsg = "";
+        String errorMsg = "<html>";
         if(rows < min_size || rows > max_size)
         {
-            errorMsg += "Rows must be between "+ min_size + " and " + max_size;
+            errorMsg += "Rows must be between "+ min_size + " and " + max_size + ".<br>";
         }
 
         if(cols < min_size || cols > max_size)
         {
-            errorMsg += "Columns must be between "+ min_size + " and " + max_size;
+            errorMsg += "Columns must be between "+ min_size + " and " + max_size + ".<br>";
         }
 
         if (numWin > rows)
         {
-            errorMsg += "Can't have more to win than the number of rows";
+            errorMsg += "Can't have more to win than the number of rows.<br>";
         }
         if (numWin > cols)
         {
-            errorMsg += "Can't have more to win than the number of Columns";
+            errorMsg += "Can't have more to win than the number of Columns." + "<br>";
         }
 
         if(numWin < min_to_win)
         {
-            errorMsg += "Number to win must be at least " + min_to_win;
+            errorMsg += "Number to win must be at least " + min_to_win + ".<br>";
+            errorMsg += "</html>";
         }
 
-        if(!errorMsg.equals(""))
+        if(!errorMsg.isEmpty())
         {
             view.displayError(errorMsg);
-
         }
+
         else
         {
             view.closeScreen();
