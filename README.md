@@ -21,7 +21,7 @@ cd src
 javac *java
 ```
 
-Run the application:
+From the same `src` directory, launch the application:
 
 ```bash
 java ConnectXApp
