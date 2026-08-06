@@ -18,7 +18,7 @@ Compile the project:
 
 ```bash
 cd src
-javac *.java
+javac *java
 ```
 
 Run the application:
