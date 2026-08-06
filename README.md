@@ -14,16 +14,19 @@ A Java implementation of the classic Connect Four game with customizable game se
 
 ## Getting Started
 
-Compile the project:
+### Option 1: Download the Executable (Recommended)
+
+Download the latest executable JAR from the **Releases** section and run:
+
+```bash
+java -jar ConnectX.jar
+```
+
+### Option 2: Build from Source
 
 ```bash
 cd src
 javac *java
-```
-
-From the same `src` directory, launch the application:
-
-```bash
 java ConnectXApp
 ```
 
