@@ -3,7 +3,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-import java.awt.Dimension;
 
 /*
 This class contains the code to create and layout the GUI for the setup screen.
@@ -93,7 +92,7 @@ public class SetupView extends JFrame implements ActionListener{
          * visible to the user now
          */
         this.pack();
-        
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
