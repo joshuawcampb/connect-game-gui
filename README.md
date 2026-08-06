@@ -17,6 +17,7 @@ A Java implementation of the classic Connect Four game with customizable game se
 Compile the project:
 
 ```bash
+cd src
 javac *.java
 ```
 
