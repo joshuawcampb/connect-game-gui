@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /**
  * This class is the entry point of our program and just loads the set up screen and controller
  */

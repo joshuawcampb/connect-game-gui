@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /**
  * @invariant ROW_SIZE = row
  * @invariant COL_SIZE = col

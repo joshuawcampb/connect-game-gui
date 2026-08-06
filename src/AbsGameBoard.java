@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 public abstract class AbsGameBoard implements IGameBoard{
 
     @Override

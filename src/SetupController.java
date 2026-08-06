@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /*
 This class is the controller for our setup screen. The processButtonClick method is called by
 SetupView when someone clicks on the submit button. It is passed in the rows, cols, players and

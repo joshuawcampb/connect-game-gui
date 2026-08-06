@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 import java.util.*;
 
 /**

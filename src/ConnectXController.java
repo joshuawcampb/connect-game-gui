@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /**
  * The controller class will handle communication between our View and our Model (IGameBoard)
  *

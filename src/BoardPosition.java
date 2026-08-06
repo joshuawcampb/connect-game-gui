@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /**
  * @invariant 0 <= rowPos <= 5
  * @invariant 0 <= colPos <= 6

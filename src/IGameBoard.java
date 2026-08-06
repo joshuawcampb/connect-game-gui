@@ -1,5 +1,3 @@
-package cpsc2150.connectX;
-
 /**
  * Initialization Ensures:
  *      board will contain blank characters and
