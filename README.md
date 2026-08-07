@@ -30,10 +30,10 @@ javac *java
 java ConnectXApp
 ```
 ## Screenshots
-![](imgs/img1.png)
-![](imgs/img2.png)
-![](imgs/img3.png)
-![](imgs/img4.png)
+<img src="imgs/img1.png" width="200">
+<img src="imgs/img2.png" width="200">
+<img src="imgs/img3.png" width="200">
+<img src="imgs/img4.png" width="200">
 
 ## Technologies Used
 
