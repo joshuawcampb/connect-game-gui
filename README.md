@@ -34,8 +34,8 @@ java ConnectXApp
 ## Screenshots
 <details>
   <summary>📸 Click here to view screenshots of the game!</summary>
-  <img src="imgs/img1.png" width="500">
-  <img src="imgs/img2.png" width="500">
+  <img src="imgs/img1.png" width="500"><br>
+  <img src="imgs/img2.png" width="500"><br>
   <img src="imgs/img4.png" width="500">
 </details>
 
