@@ -2,6 +2,8 @@
 
 A Java implementation of the classic Connect Four game with customizable game settings. Players can configure the number of rows, columns, players, and the number of consecutive pieces required to win before starting a game. The project demonstrates object-oriented design principles, graphical user interface development, and the Model-View-Controller (MVC) architecture.
 
+<img src="imgs/img3.png" width="500">
+
 ## Features
 
 - Customizable board dimensions
@@ -32,7 +34,6 @@ java ConnectXApp
 ## Screenshots
 <img src="imgs/img1.png" width="500">
 <img src="imgs/img2.png" width="500">
-<img src="imgs/img3.png" width="500">
 <img src="imgs/img4.png" width="500">
 
 ## Technologies Used
