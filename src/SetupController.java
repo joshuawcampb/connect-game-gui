@@ -52,7 +52,7 @@ public class SetupController {
             errorMsg += "</html>";
         }
 
-        if(!errorMsg.isEmpty())
+        if(errorMsg.equals(""))
         {
             view.displayError(errorMsg);
         }

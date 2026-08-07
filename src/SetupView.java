@@ -91,7 +91,6 @@ public class SetupView extends JFrame implements ActionListener{
          * it, that it exits this program when closed, and that it becomes
          * visible to the user now
          */
-        this.pack();
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
