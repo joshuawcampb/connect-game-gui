@@ -30,10 +30,10 @@ javac *java
 java ConnectXApp
 ```
 ## Screenshots
-<img src="imgs/img1.png" width="300">
-<img src="imgs/img2.png" width="300">
-<img src="imgs/img3.png" width="300">
-<img src="imgs/img4.png" width="300">
+<img src="imgs/img1.png" width="500">
+<img src="imgs/img2.png" width="500">
+<img src="imgs/img3.png" width="500">
+<img src="imgs/img4.png" width="500">
 
 ## Technologies Used
 
